@@ -1,4 +1,4 @@
-[Live Site]([https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react](https://extra-services.vercel.app/))
+[Live Site](https://extra-services.vercel.app/)
 
 # React + TypeScript + Vite
 
