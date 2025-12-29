@@ -1,0 +1,187 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgb(13, 13, 13);
+  background-color: rgb(247, 248, 250);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+main {
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.extra-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.extra {
+  background-color: white;
+  border-radius: 24px;
+  box-sizing: border-box;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.extra__title {
+  font-weight: 600;
+}
+
+.extra__info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+
+.extra__text {
+  color: rgb(128, 128, 128);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 84%;
+}
+
+.extra__price {
+  font-size: 16px;
+}
+
+.extra__button-wrapper {
+  padding-top: 6px;
+}
+
+.extra_button {
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  color: rgb(80, 98, 150);
+  font-weight: 500;
+  line-height: 20px;
+  background-color: rgba(44, 66, 124, 0.08);
+  padding: 6px 10px;
+}
+
+.extra_button:hover {
+  color: white;
+  background-color: rgb(80, 98, 150);
+}
+
+.extra_button:focus {
+  box-shadow: 0 0 0 3px rgba(225, 229, 239, 1);
+}
+
+.summary {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.summary__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 24px;
+  padding: 16px;
+}
+
+.total__amount {
+  display: flex;
+  justify-content: space-between;
+  line-height: 20px;
+}
+
+.total__label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.total__sum {
+  font-size: 16px;
+}
+
+.total__pay-button {
+  background-color: rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.24);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 12px 10px;
+  width: 100%;
+  border: none;
+}
+
+@media (width >= 1024px) {
+  main {
+    flex-direction: row;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .extra-list {
+    width: 70%;
+  }
+
+  .extra__button-wrapper {
+    max-width: 150px;
+  }
+
+  .summary {
+    width: 30%;
+    position: sticky;
+    top: 0;
+  }
+
+  .total__sum {
+    font-weight: 600;
+  }
+}
